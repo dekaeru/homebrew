@@ -1,0 +1,258 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LivrodoJogador",
+				"abbreviation": "LJ",
+				"full": "Livro do Jogador",
+				"url": "",
+				"authors": [
+					"Wizard of the Coast"
+				],
+				"convertedBy": [
+					"Luan"
+				],
+				"color": "#1f3bad"
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Sono (Sleep)",
+			"source": "LivrodoJogador",
+			"page": 276,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 59
+				}
+			],
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of fine sand, rose petals, or a cricket"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Essa magia põem as criaturas num entorpecimento mágico. Jogue {@dice 5d8}; o total é a quantidade de pontos de vida de criaturas afetados pela magia. As criaturas numa área de 6 metros de raio [20-foot radius], centrada no ponto escolhido, dentro do alcance, são afetadas em ordem ascendente dos pontos de vida atuais delas (ignorando criaturas {@condition unconscious}).",
+				"Começando com as criaturas com menos pontos de vida atuais, cada criatura afetada por essa magia cai inconsciente até a magia acabar, sofrer dano ou alguém usar sua ação para sacudi-la ou esbofeteá-la até acordar. Subtraia os pontos de vida de cada criatura do total antes de seguir para a próxima criatura com menos pontos de vida atuais. Os pontos de vida atuais da criatura devem ser iguais ou menores que o valor restante para que a criatura possa ser afetada.",
+				"Mortos-vivos e criaturas imunes a serem {@condition charmed} não são afetadas por essa magia."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Quando você conjurar essa magia usando um espaço de magia de 2º nível ou superior, jogue {@scaledice 5d8|1-9|2d8} adicionais para cada nível do espaço acima do 1°."
+					]
+				}
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"beast",
+				"celestial",
+				"construct",
+				"dragon",
+				"elemental",
+				"fey",
+				"fiend",
+				"giant",
+				"humanoid",
+				"monstrosity",
+				"ooze",
+				"plant",
+				"undead"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight Domain (UA)",
+							"shortName": "Twilight (UA)",
+							"source": "UAClericDruidWizard"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Twilight Domain",
+							"shortName": "Twilight",
+							"source": "TCE"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Blood Domain",
+							"shortName": "Blood",
+							"source": "TDCSR"
+						}
+					},
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"shortName": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of Redemption (UA)",
+							"shortName": "Redemption (UA)",
+							"source": "UAATrioOfSubclasses"
+						}
+					},
+					{
+						"class": {
+							"name": "Paladin",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Oath of Redemption",
+							"shortName": "Redemption",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"shortName": "Arcane Trickster",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "The Archfey",
+							"shortName": "Archfey",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "The Noble Genie (UA)",
+							"shortName": "Noble Genie (UA)",
+							"source": "UA2020SubclassesPt1"
+						}
+					}
+				]
+			},
+			"races": [
+				{
+					"name": "Elf (Pallid)",
+					"source": "EGW",
+					"baseName": "Elf",
+					"baseSource": "PHB"
+				},
+				{
+					"name": "Halfling (Mark of Hospitality)",
+					"source": "ERLW",
+					"baseName": "Halfling",
+					"baseSource": "PHB"
+				}
+			],
+			"backgrounds": [
+				{
+					"name": "Dimir Operative",
+					"source": "GGR"
+				}
+			],
+			"feats": [
+				{
+					"name": "Aberrant Dragonmark",
+					"source": "ERLW"
+				},
+				{
+					"name": "Divinely Favored",
+					"source": "UA2022HeroesOfKrynn"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "TCE"
+				},
+				{
+					"name": "Fey Touched",
+					"source": "UA2020Feats"
+				},
+				{
+					"name": "Magic Initiate",
+					"source": "PHB"
+				},
+				{
+					"name": "Strixhaven Initiate",
+					"source": "SCC"
+				}
+			]
+		}
+	]
+}
